@@ -1,0 +1,110 @@
+/* ---------- TOP HEADER ---------- */
+
+.top{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:12px 10px;
+    background:whitesmoke;
+}
+
+.sizing{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    margin-right: 25px;
+}
+
+.title{
+    font-size:24px;
+    font-weight:bold;
+    text-align:center;
+    margin-right: 25px;
+}
+
+/* ---------- NAVBAR ---------- */
+
+.nav-barr{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+    background:#222;
+    padding:10px 5px;
+}
+
+.links{
+    color:whitesmoke;
+    font-size:14px;
+    padding:8px 10px;
+    text-align:center;
+}
+
+/* ---------- CAROUSEL ---------- */
+
+#demo{
+    width:100%;
+    max-width:375px;
+
+    /* Screen height adjustment */
+    height:calc(100vh - 180px);
+
+    margin:10px auto;
+    overflow:hidden;
+    border-radius:10px;
+}
+
+.carousel-inner,
+.carousel-item,
+.carousel-item img{
+    width:100%;
+    height:calc(100vh - 180px);
+    object-fit:cover;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+.footer{
+
+    width:100%;
+    height:fit-content;
+    background:whitesmoke;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;          /* reduced gap */
+    padding:3px 1;     /* reduced padding */
+    flex-wrap:wrap;
+}
+
+.icons{
+    width:21px;
+    height:22px;
+}
+
+/* ---------- MOBILE RESPONSIVE ---------- */
+
+@media screen and (max-width:375px){
+
+    .title{
+        font-size:18px;
+    }
+
+    .links{
+        font-size:12px;
+        padding:6px;
+    }
+
+    #demo,
+    .carousel-inner,
+    .carousel-item,
+    .carousel-item img{
+
+        /* fits inside 640px screen with footer visible */
+        height:calc(100vh - 180px);
+    }
+}
